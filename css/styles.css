@@ -237,6 +237,33 @@ a {
   }
 }
 
+/* Blocks */
+.block {
+  padding: 6rem 2rem;
+}
+
+.block--darker {
+  background: var(--color-primary-main);
+}
+
+.block--lighter {
+  background: var(--color-primary-intro-email);
+}
+
+.block--svg-bg {
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-position: bottom;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .block--svg-bg {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-size: 100%;
+  }
+}
+
 /* Grids */
 .grid {
   display: grid;
