@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-family: "Open sans", Arial, Helvetica, sans-serif;
   color: var(--neutral);
 }
@@ -44,6 +44,10 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
   h1 {
     font-size: 4.768rem;
   }
@@ -54,5 +58,49 @@ p {
 
   h3 {
     font-size: 3.052rem;
+  }
+}
+
+/* Buttons */
+.btn {
+  background: none;
+  padding: 2rem 2rem;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn--gradient {
+  background-image: linear-gradient(120deg, var(--call-to), var(--call-to-two));
+  background-size: 250%;
+  color: #fff;
+}
+
+.btn--size {
+  width: 100%;
+}
+
+.btn--main {
+  padding: 2rem 10vw;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--size {
+    width: initial;
+    padding: 2rem 3rem;
+  }
+
+  .btn--main {
+    padding: 2rem 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
   }
 }
