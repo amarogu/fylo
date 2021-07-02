@@ -9,6 +9,13 @@
   --neutral: hsl(0, 0%, 100%);
 }
 
+/* General rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -156,3 +163,26 @@ a {
 .card--shadow-black {
   box-shadow: 0 0 20px 30px #050f1b;
 }
+
+/* Inputs */
+.input {
+  padding: 1.5rem 3rem;
+  border-radius: 40px;
+  border: 0;
+  outline: 0;
+  color: #d8d8d8;
+}
+
+.input--black-shadow {
+  box-shadow: 0 0 10px 5px #1a212b;
+}
+
+.input--type {
+  width: 100%;
+}
+
+::placeholder {
+  color: #d8d8d8;
+}
+
+/*  */
