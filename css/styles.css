@@ -128,12 +128,20 @@ a {
 
 /* Cards */
 .card {
-  padding: 4.5rem 2.5rem 2rem;
   box-shadow: 0 0 10px 5px #1a212b;
   border-radius: 15px;
 }
 
-.card--bigger {
+.card__content {
+  padding: 2.5rem 7% 2rem;
+}
+
+.card__header {
+  padding: 4.5rem 7% 1rem;
+}
+
+.card__content--bigger,
+.card__header--bigger {
   padding: 4.2rem 7.5rem;
 }
 
