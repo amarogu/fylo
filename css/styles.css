@@ -1,0 +1,58 @@
+:root {
+  --color-primary-intro-email: hsl(217, 28%, 15%);
+  --color-primary-main: hsl(218, 28%, 13%);
+  --color-primary-footer: hsl(216, 53%, 9%);
+  --color-primary-testimonials: hsl(219, 30%, 18%);
+  --call-to: hsl(176, 68%, 64%);
+  --call-to-two: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+  --neutral: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  color: var(--neutral);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4.768rem;
+  }
+
+  h2 {
+    font-size: 3.815rem;
+  }
+
+  h3 {
+    font-size: 3.052rem;
+  }
+}
