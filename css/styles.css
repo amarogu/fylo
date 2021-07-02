@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Open sans", Arial, Helvetica, sans-serif;
   color: var(--neutral);
 }
@@ -45,7 +45,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   h1 {
@@ -69,7 +69,6 @@ p {
   border: 0;
   border-radius: 40px;
   text-transform: capitalize;
-  font-size: 2.2rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -99,12 +98,6 @@ p {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .btn {
-    font-size: 1.5rem;
-  }
-}
-
 /* Links */
 a {
   text-decoration: none;
@@ -117,7 +110,7 @@ a {
 }
 
 .link--arrow__icon {
-  width: 20px;
+  width: 15px;
   margin: auto;
   margin-left: 0.5rem;
   transition: margin-left 0.2s;
@@ -131,4 +124,27 @@ a {
   display: inline-flex;
   align-items: center;
   border-bottom: 1px solid #66e4d8;
+}
+
+/* Cards */
+.card {
+  padding: 4.5rem 2.5rem 2rem;
+  box-shadow: 0 0 10px 5px #1a212b;
+  border-radius: 15px;
+}
+
+.card--bigger {
+  padding: 4.2rem 7.5rem;
+}
+
+.card--color-email-intro {
+  background: var(--color-primary-intro-email);
+}
+
+.card--color-testimonials {
+  background: var(--color-primary-testimonials);
+}
+
+.card--shadow-black {
+  box-shadow: 0 0 20px 30px #050f1b;
 }
