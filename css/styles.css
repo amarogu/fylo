@@ -226,6 +226,17 @@ a {
   }
 }
 
+/* Icons */
+.icon {
+  width: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    width: 100px;
+  }
+}
+
 /* Grids */
 .grid {
   display: grid;
