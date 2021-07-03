@@ -231,6 +231,10 @@ a {
   width: 64px;
 }
 
+.icon--small {
+  width: 32px;
+}
+
 @media screen and (min-width: 1024px) {
   .icon {
     width: 100px;
@@ -239,7 +243,7 @@ a {
 
 /* Blocks */
 .block {
-  padding: 6rem 2rem;
+  padding: 2.5rem 2rem;
 }
 
 .block--darker {
@@ -276,5 +280,48 @@ a {
 
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* List */
+.list {
+  list-style: none;
+}
+
+.list--inline {
+  display: inline-block;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.nav__links {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav__links > li {
+  padding: 2rem 2vw;
+  white-space: nowrap;
+}
+
+.nav a {
+  color: var(--neutral);
+}
+
+.nav .icon {
+  width: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav .icon {
+    width: 120px;
   }
 }
