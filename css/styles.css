@@ -297,6 +297,7 @@ a {
   align-items: center;
   padding: 1.5rem;
   font-size: 1.3rem;
+  background: var(--color-primary-intro-email);
 }
 
 .nav__links {
@@ -366,5 +367,17 @@ a {
   .hero__content > p {
     margin-left: 20%;
     margin-right: 20%;
+  }
+}
+
+/* Features block */
+.features-block .grid {
+  row-gap: 5rem;
+  column-gap: 20rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .feature__text > p {
+    margin: 0 20%;
   }
 }
