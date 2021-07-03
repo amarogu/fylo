@@ -231,13 +231,9 @@ a {
   width: 64px;
 }
 
-.icon--small {
-  width: 32px;
-}
-
 @media screen and (min-width: 1024px) {
   .icon {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -324,4 +320,18 @@ a {
   .nav .icon {
     width: 120px;
   }
+}
+
+/* Features */
+.feature.block {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.feature img {
+  margin: auto;
+}
+
+.feature__text {
+  text-align: center;
 }
