@@ -381,3 +381,17 @@ a {
     margin: 0 20%;
   }
 }
+
+/* Showcase block */
+.showcase-block {
+  row-gap: 3.5rem;
+  column-gap: 3rem;
+}
+
+.showcase-block > img {
+  width: 100%;
+}
+
+.showcase-block__content {
+  align-self: center;
+}
