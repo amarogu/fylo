@@ -481,6 +481,28 @@ a {
   }
 }
 
+/* Call to */
+.call-to__header {
+  text-align: center;
+  padding-top: 3.3rem;
+}
+
+.call-to__header h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .container.call-to {
+    padding: 0 5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .call-to__header p {
+    margin: 0 5%;
+  }
+}
+
 /* Footer */
 .footer {
   padding-top: 21.4rem;
