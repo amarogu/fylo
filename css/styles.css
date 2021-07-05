@@ -164,7 +164,7 @@ a {
   border-radius: 40px;
   border: 0;
   outline: 0;
-  color: #d8d8d8;
+  color: #636363;
 }
 
 .input--black-shadow {
@@ -172,8 +172,10 @@ a {
 }
 
 ::placeholder {
-  color: #d8d8d8;
+  color: #afafaf;
 }
+
+/* TODO: Implement the validation someday */
 
 /* Input groups */
 .input-group {
@@ -544,8 +546,12 @@ a {
   margin-top: 0.35rem;
 }
 
-.footer__section-info :first-child p {
+.footer__section-info:nth-child(2) :first-child p {
   margin: 0 35% 0 0;
+}
+
+.footer__section-info:nth-child(3) p {
+  margin-left: 0;
 }
 
 .footer__item {
@@ -559,7 +565,7 @@ a {
 }
 
 .footer__item__icon {
-  margin-right: 0.75rem;
+  margin-right: 2rem;
 }
 
 .footer a {
@@ -602,12 +608,13 @@ a {
   }
 
   .footer .grid {
-    grid-template-areas: "logo . . . ." ". . . . .";
-    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    grid-template-areas: "logo . . . ." ". . . . ." "attribution . . . .";
+    grid-template-rows: auto auto auto;
     grid-template-columns: 3fr 2fr 1fr 1fr auto;
   }
 
-  .footer__section-info :first-child p {
+  .footer__section-info:nth-child(2) :first-child p {
     margin: 0;
   }
 
@@ -619,6 +626,10 @@ a {
 
   .footer__section-social i {
     font-size: 25px;
+  }
+
+  .footer__logo {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -636,9 +647,18 @@ a {
 
 /* Attribution */
 .attribution {
+  margin-top: 3rem;
   text-align: center;
+  grid-area: attribution;
 }
 
 .attribution a {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .attribution {
+    text-align: left;
+    margin-left: 3.2rem;
+  }
 }
