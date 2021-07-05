@@ -80,6 +80,10 @@ p {
   color: #fff;
 }
 
+.btn--gradient:hover {
+  background-image: linear-gradient(#89dce2, #89dce2);
+}
+
 .btn--size {
   width: 100%;
 }
@@ -334,8 +338,14 @@ a {
   white-space: nowrap;
 }
 
-.nav a {
+.nav .nav__anchor {
   color: var(--neutral);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.nav .nav__anchor:hover {
+  opacity: 1;
 }
 
 .nav .icon {
